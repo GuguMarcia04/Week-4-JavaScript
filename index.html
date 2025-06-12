@@ -45,5 +45,63 @@
             }
         </script> 
     </div>
+
+
+    <!-- Lesson 3: Variables (Text storage) -->
+    <div class="lesson">
+        <h3>Lesson 3: Variables (Text storage)</h3>
+
+        <p id="Math">Math equation willshow up here</p> 
+        <button onclick="lesson3()">Do Math</button> 
+        
+        <script>
+            function lesson3() {
+                var  number1 = 7;
+                var  number2 = 10;
+                document.getElementById("Math").innerHTML = number1 + " x " + number2 + " = " + (number1 * number2);          
+            }
+        </script>
+    </div>
+
+    <!-- Lesson 4: Variables (Text storage) -->
+
+    <div class="lesson">
+        <h3>Lesson 4: If/Else Decisions (Conditionals)</h3>
+
+        <input type="password" id="password" Placeholder="Try: 007"> 
+        <button onclick="lesson4()">Check Password</button>         
+        <div class="result" id="result4">Enter password and click</div>
+          
+        <script>
+            function lesson4() {
+                var userPassword = document.getElementById("password").value;
+
+                if (userPassword === "007") {
+                    document.getElementById("result4").innerHTML = "Access Granted";
+                } else {
+                    document.getElementById("result4").innerHTML = "Access Denied";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- Lesson 5: If/Else Decisions (Conditionals) -->
+
+    <div class="lesson">
+        <h3>Lesson 5: Click events</h3>
+
+        <h2 onclick="this.innerHTML='is awsome'">JavaScript</h2>
+        <p>Click on the word "JavaScript" above</p>   
+    </div>
+
+    <!-- Lesson 6: Click events -->
+     
+    <div class="lesson">
+        <h3>Lesson 6: Click events</h3>
+
+        <button id="clickButton">Click me</button>
+        <p id="clickText">Click the button above</p>
+        
+        </script>
 </body>           
 </html>
