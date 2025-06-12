@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNB App academy Javasrcipt- JS week 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FNB App academy Javasrcipt- JS week 4</h1>   
+
+    <div class="lesson">
+        <h3>Lesson 1: Text on page</h3>
+
+        <h2 id="heading1">Hello</h2>
+        <p id="text1">world</p>
+        <button onclick="lesson1()">Change Text</button> 
+        
+        <script>
+            function lesson1(heading, text){
+                document.getElementById("heading1").innerHTML = "Good Day " + heading;
+                document.getElementById("text1").innerHTML = "world " + text;
+            }
+        </script>
+
+         
+</div>
+</body>           
+</html>
