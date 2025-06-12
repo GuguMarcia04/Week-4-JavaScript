@@ -22,8 +22,28 @@
                 document.getElementById("text1").innerHTML = "world " + text;
             }
         </script>
+    </div>
 
-         
-</div>
+
+
+    <!-- Lesson 2: Text on page -->
+    <div class="lesson">
+        <h2>Lesson 2: Variables (Text storage)</h2>
+
+        <h2 id="heading2">Text Change</h2>
+        <p id="text2">more text</p>
+        <button onclick="lesson2()">Use Variables</button> 
+        
+        <script>
+            function lesson2(){
+                var  message1 = "Hello everyone";
+                var  message2 = "I love JavaScript";
+                var  message3 = "Its awsome!";
+                document.getElementById("heading2").innerHTML = message1;
+                document.getElementById("text2").innerHTML = message2 + "   " + message3;
+            
+            }
+        </script> 
+    </div>
 </body>           
 </html>
