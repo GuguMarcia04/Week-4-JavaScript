@@ -94,14 +94,27 @@
         <p>Click on the word "JavaScript" above</p>   
     </div>
 
-    <!-- Lesson 6: Click events -->
-     
-    <div class="lesson">
-        <h3>Lesson 6: Click events</h3>
+    <!-- Lesson 6: -->
 
-        <button id="clickButton">Click me</button>
-        <p id="clickText">Click the button above</p>
+    <div class="lesson">
+        <h3>Lesson 6: Toggle Functions</h3>
+
+        <h2 id="toggle" onclick="toggleText()">JavaScript</h2>
+        <p>Click repeatedlymto toggle!</p>
         
+        <script>
+            function toggleText() {
+                var heading = document.getElementById("toggle");
+                if (heading.innerHTML === "JavaScript") {
+                    heading.innerHTML = "is awsome";
+                } else {
+                    heading.innerHTML = "JavaScript";
+                }
+            }
         </script>
+    </div>
+    
+    <!-- Lesson 7: Toggle Functions -->
+
 </body>           
 </html>
