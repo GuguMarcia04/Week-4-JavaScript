@@ -115,7 +115,67 @@
     </div>
 
     <!-- Lesson 7: Toggle Functions -->
-     
+     <div class="lesson">
+        <h2> Lesson 7: Function Parameters</h2>
+        <p><strong>Concept</strong>: Passing data into function</p>
+        
+        <button onclick="addNumbers(10, 7)">Add 10 + 7</button>
+        <button onclick="addNumbers(25, 18)">Add 25 + 18</button>
+        <button onclick="addNumbers(1245, 562)">Add 1245 + 562</button>
+        <div class="output" id="addition7">Result will show here.</div>
+
+
+        <script>
+            function addNumbers(num1, num2) {
+                document.getElementById("addition7").innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
+            }            
+        </script>
+    </div>
+
+    <!-- Lesson 8: Function Parameters -->
+    <div class="lesson">
+        <h2>Lesson 8: Function Return</h2>
+        <p><strong>Concept</strong>: Functions returning values to be used elsewhere.</p>
+        
+        <button onclick="runlesson8()">Calculate and Display Result</button>
+        <button onclick="output" id="addition8">Result will show here.</button>
+
+        <script>
+            function runlesson8() {
+                document.getElementById("addition8").innerHTML = "10 + 7 = " + addNumbers(10, 7);
+            }
+
+            function addNumbersReturn(num1, num2) {                
+                return num1 + num2;
+            }
+        </script>
+    </div>     
+
+    <!-- Lesson 9: Function Return -->
+    <div class="lesson">
+        <h2>Lesson 9: Variable Scopes</h2>
+        <p><strong>Concept</strong>: Understanding where variables can be used.</p>
+        
+        <button onclick="demonstrateScope()">Demonstrate Variable Scope</button>
+        <div class="scopeOutput" id="scopeOutput">Click button to see scope in action.</div>
+
+        <script>
+            var globalVariable ="I am a global variable";
+
+            function demonstrateScope() {
+                var localVariable = "I am a local variable";
+                document.getElementById("scopeOutput").innerHTML = globalVariable + "<br>" + 
+                "Global" + globalVariable + "<br>" + 
+                "Local: " + localVariable; + "<br>" +
+                "Local variables only exist within the function they are declared in.";
+            }
+
+            function demonstratelocalScope() {                
+                document.getElementById("scopeOutput").innerHTML = localVariable; 
+            }
+
+        </script>
+    </div>
 
 </body>           
 </html>
