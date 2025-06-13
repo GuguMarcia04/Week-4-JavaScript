@@ -2,23 +2,36 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-<body>
-    <p>Welome. Please log in</p>
+    <body>
+       <p>Welcome. Please log in</p>
 
     <form>
-        <label for="usernameInput">Username:</label><input type="text" id="usernameInput" name="usernameInput" required>
-        <label for="passwordInput">Password:</label><input type="password" id="passwordInput" name="passwordInput" required>
+        <label for="usernameInput">Username:</label><input type="text" id="usernameInput" name="usernameInput" required><br/>
+        <label for="passwordInput">Password:</label><input type="password" id= "passwordInput" name="passwordInput" required><br/>
         <p id="message"></p>
-        <br/><br/>
-        <a href="#">Log in</a>
+        <br>
+        <a href="#" onclick="verifyUser()">Log in</a>
     </form>
     
     <script>
 
-        function verifyUser() {
+        function verifyUser(){
             var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+           
+            checkUserCreds(username, password);
         } 
 
+        function checkUserCreds(username, password){
+            var systemUsername = "Gugu Nkosi";
+            var systemPassword = "0406";
+
+            if (username === systemUsername && password === systemPassword) {
+                document.getElementById("message").innerHTML = " Correct.Loggin you...";
+            } else {
+                document.getElementById("message").innerHTML = "username or password are incorrect.";
+            }
+        }
     </script>  
 
 </body>
