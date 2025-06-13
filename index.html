@@ -160,14 +160,14 @@
         <div class="scopeOutput" id="scopeOutput">Click button to see scope in action.</div>
 
         <script>
-            var globalVariable ="I am a global variable";
+            var globalVariable = "I'm a global variable";
 
             function demonstrateScope() {
                 var localVariable = "I am a local variable";
-                document.getElementById("scopeOutput").innerHTML = globalVariable + "<br>" + 
-                "Global" + globalVariable + "<br>" + 
+                document.getElementById("scopeOutput").innerHTML =  
+                "Global:" + globalVariable + "<br>" + 
                 "Local: " + localVariable; + "<br>" +
-                "Local variables only exist within the function they are declared in.";
+                "Local variables only exist within their function!";
             }
 
             function demonstratelocalScope() {                
